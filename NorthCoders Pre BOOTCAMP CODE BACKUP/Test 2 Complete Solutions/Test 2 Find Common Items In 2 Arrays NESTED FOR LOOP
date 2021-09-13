@@ -1,0 +1,32 @@
+// Please complete this function...
+//compare 2 arrays and return the common items
+
+function findCommonItems(array1, array2) {
+  
+//Nested for loop i and j
+//Store the items of the first array index, then compare to the other, and then create a
+//New array with the common elements
+
+
+let finalArray =[]
+
+ for(let i=0; i <array1.length; i++){
+         
+    for (let j=0; j<array2.length; j++){
+         if(array1[i]===array2[j]){
+           finalArray.push(array1[i])
+         }
+    }
+
+//console.log(array1)
+ }
+return finalArray
+
+}
+
+//findCommonItems([], []); // should return []
+
+//findCommonItems(['a', 'b'], ['a']); // should return ['a']
+
+findCommonItems(['a', 'b', 'c', 'd'], ['c', 'd', 'e', 'f', 'g']);
+// should return ['c', 'd']

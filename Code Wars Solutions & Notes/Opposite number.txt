@@ -1,0 +1,32 @@
+function opposite(number) {
+  //take the parameter number which is either a positive or negative integer and return its opposite
+  //so we need an if statement to see if the number being passed is a negative or a positive number so anything
+  //greater than 0 will a positive thus we need to invert this, else we need to strip the first character from the string
+    let result =0; 
+    if (number >0){
+    result = number*(-1);
+    //var result = Math.abs(number)
+    return result;
+  }else{
+  result = Math.abs(number)
+  
+ 
+  return result; 
+  }
+  //console.log ("-" + number)
+}
+
+
+function opposite(number) {
+    let result =0; 
+    if (number >0){
+    result = number*(-1);
+    return result;
+  }else{
+  result = Math.abs(number)
+  
+ 
+  return result; 
+  }
+  
+}

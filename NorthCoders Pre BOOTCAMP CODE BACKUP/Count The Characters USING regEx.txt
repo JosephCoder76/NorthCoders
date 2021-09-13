@@ -1,0 +1,32 @@
+//Solution One
+
+
+function countChars (str, char) {
+ 
+let regEx = new RegExp(char, 'g');
+
+let charCount = (str.match(regEx) || []).length;
+  
+return (charCount);
+}
+
+//countChars("hello my name is Jon", "J")
+//countChars('hello', 'l') //--> 2
+
+//countChars('hello world', 'l') //--> 3
+
+//countChars('hello world', 'z') //--> 0
+
+//countChars('hello world', 'e') //--> 1
+
+//Solution Two Shorter
+//Create a variable that equals the value of the regEx function, //which includes the char parameter passed from the main function,
+//and the g switch for global, thus search for more than one occurance. The match mrethod returns an array of all the characters that match the
+//regular expression and then we get return the length of this array using the .length method
+
+function countChars (str, char) {
+ 
+let regEx = new RegExp(char, 'g');
+
+    return ((str.match(regEx) || []).length)
+}

@@ -1,0 +1,44 @@
+function splitTheBill(x) {
+  
+  let counter =0;
+  let total =0;
+ 
+//Sum all the elements of the object with a for loop checking if the element has a value and if true adding it to the total variable for the total bill,
+//increment the counter by one this will become the value to divide the bill by later   
+    for( var el in x ) {
+    if( x.hasOwnProperty( el ) ) {
+    total += ( x[el] );
+    counter = counter +1;
+ }
+}
+ //Work out how much each person should pay
+ let shouldPay = (total/counter);
+ 
+//Create a new object called shouldRecieve and assign it the values of the x object, we have to do this because this enables this code to deal with objects of
+//varying element sizes and with different key values, for exmaple the 3rd element of the second object passed to the function is an X and not a C,
+//So we nee a way of being able to reconstruct the object for each object passed to the program.
+ let shouldRecieve={};
+
+//Copy the contents of the x object to the shouldRecieve object
+ Object.assign(shouldRecieve,x)
+    
+//Assign the values of shouldRecieve Object keys to the keys variable 
+const keys = Object.keys(shouldRecieve);
+   
+//For each key value in the shouldRecieve object take the value of the key
+ //So we work from the innermost brackets outwards. So the subtraction is done first, 
+ //subract shouldPay from each of the shouldRecieve key values, then we make them 
+ //equal 2 Decimal Places by toFixed method, then parseFloat is paseed on the final brackets, which removes
+  //any unecessary trailing zeros 
+    Object.values(shouldRecieve).forEach((key, index) => {
+       
+     shouldRecieve[keys[index]] = parseFloat((shouldRecieve[keys[index]] - shouldPay).toFixed(2))
+         
+     }) 
+      //return the new object with the new values shouldRecieve
+      return (shouldRecieve);
+       
+}
+
+ 
+

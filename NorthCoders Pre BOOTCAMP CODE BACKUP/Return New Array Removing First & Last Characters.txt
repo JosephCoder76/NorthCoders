@@ -1,0 +1,30 @@
+/*Solution 1
+
+function getFirstAndLast(array) {
+  Create a new array containing only the first an last items of the array
+  let output = array.splice(0,1)
+  let output2 =array.splice(-1,1)
+  let final = output + ',' + output2;
+  console.log(final);
+ return (final);  
+}
+*/
+
+
+/*Solution 2
+  Create a new array containing only the first an last items of the array
+  Return the newArray and make it equal the return values of both splices concatenated with the ,
+  character.
+  The first splice starts at position zero of the array and the second paramter removes
+  this character found at position zero, and the second splice deals with removing the last character
+  using -1 and removes 1 character using the second parameter. So the first parameter in the splice
+  is the starting position and the second aparamter instructs the interpreter on how many charcters to remove
+  We dont need to decalre newArray as an array as the splice method returns an array so this type is assigned
+  by proxy
+  */
+
+function getFirstAndLast(array) {
+  
+  return newArray = array.splice(0,1) + "," + array.splice(-1,1)  
+     
+}

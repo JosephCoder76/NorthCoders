@@ -1,0 +1,33 @@
+function luckyCandies(prizes, k) {
+  //candies must be multiples of k condition
+ 
+   //add all the elements to get the sum
+  let sum = 0;
+  let tempVal =0;
+  let maxCandies=0;
+  let newArray =[];
+  
+  for (let i =0; i<prizes.length; i++){
+    sum = sum +prizes[i];
+    //Iterate through the array and store all numbers that are a multiple of k in a new array, then we will sort the 
+    //new array in asceding order and use retrieve the last element of the array and assign to the maxCandies variable for
+    //output
+   }
+      console.log(newArray)
+    
+     for (let i =0; i<prizes.length; i++){ 
+         if (sum % k ==0){
+           newArray.push(prizes[i]);            
+
+}     
+       for (let i = 5; i <= prizes.length; i++) {
+         
+
+}
+}
+console.log(newArray)
+  
+  return (sum)
+  
+  
+}

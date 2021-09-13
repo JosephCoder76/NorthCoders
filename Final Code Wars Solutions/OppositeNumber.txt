@@ -1,0 +1,16 @@
+function opposite(number) {
+    let result =0; 
+    
+//If positive innvert to negative using *-1
+    if (number >0){
+    result = number*(-1);
+    return result;
+//Else its negative so use Math.abs to make it an absolute integer full number 
+ }else{
+  result = Math.abs(number)
+  
+ 
+  return result; 
+  }
+  
+}

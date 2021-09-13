@@ -1,0 +1,37 @@
+//Solution 1 Standard For Loop
+//We create a newArray by pusing each of the people[i].pets paired key values in to it, push adds each item to the end of the newArray, then we use 
+//the flat method to return a one dimensional array, as the original array can contain numerous objects making it multi dimensional
+gatherPets([{ name: 'Malcolm', pets: ['Bear', 'Minu'] },{ name: 'Caroline', pets: ['Basil', 
+'Hamish'] },]);
+
+function gatherPets(people) {
+  let newArray = [];
+  for (let i = 0; i < people.length; i++) {
+    newArray.push(people[i].pets);
+  }
+  return newArray.flat();
+}
+
+//Solution 2 using For in loop
+gatherPets([{ name: 'Malcolm', pets: ['Bear', 'Minu'] },{ name: 'Caroline', pets: ['Basil', 
+'Hamish'] },]);
+
+function gatherPets(people) {
+const newArray=[]
+for (let el in people) {
+    newArray.push(people[el].pets);
+  }
+  return newArray.flat();
+}
+
+gatherPets([{ name: 'Malcolm', pets: ['Bear', 'Minu'] },{ name: 'Caroline', pets: ['Basil', 
+'Hamish'] },]);
+
+
+//Solution 3
+//Return a one dimensional array by using flatMap method which will return a new array of all the pets keys in the people array, and flatten the array if it
+//has more than one array within it, in our case we have a multi dimensional array of objects
+
+function gatherPets(people){
+  return people.flatMap(key => key.pets);
+}

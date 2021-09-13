@@ -1,0 +1,17 @@
+// Please complete this function...
+//Return a letter x number of times
+function repeatLetter(letter, number) {
+   
+  let output = "";
+  output = letter.repeat(number); 
+  return output;
+
+}
+
+//repeatLetter('a', 0); // should return ''
+
+//repeatLetter('a', 1); // should return 'a'
+
+repeatLetter('a', 3); // should return 'aaa'
+
+//repeatLetter('z', 6); // should return 'zzzzzz'

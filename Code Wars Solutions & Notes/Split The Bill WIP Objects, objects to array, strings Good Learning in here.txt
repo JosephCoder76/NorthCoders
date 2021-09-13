@@ -1,0 +1,30 @@
+function splitTheBill(x) {
+
+
+
+//create a copy of the array so we can remove the C key and add the X key and property value
+var obj1 = Object.assign({}, x);
+var obj2 = Object.assign({}, x);
+ delete obj2[`${Object.keys(obj2).length-1}`]
+//console.log for testing output  
+ //console.log (x);
+ //console.log(copy);
+
+for (const property in obj1) {
+  //Assign new 
+   Object.assign(obj1,{A: 5, B: 0, C: -5})
+  //check the object is returning the keys and values as expected
+  //console.log(`${property}: ${x[property]}`);
+  return(obj1)
+}
+   
+for (const property in obj2) {
+
+  //Assign the values to the copy objects keys  
+  Object.assign(obj2,{A: 15, B: 0, X: -15})
+  //check the object is returning the keys and values as expected
+  //console.log(`${property}: ${obj2[property]}`);
+  return(obj2)
+}
+  
+}

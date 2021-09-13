@@ -1,0 +1,36 @@
+function doubleChar(str) {
+//split the string and assign it to the output variable 
+let output=str.split("");
+
+  //create a result variable
+let result = "";
+ 
+  //for loop starting at 0 the first character, exiting when the last character of the string is reached iterating by 1 each
+  //loop
+  for (i=0; i < str.length; i++){
+    //result = each element of the split string array + itself again until we reach the end of the string
+    result = result + output [i] + output[i]    
+     
+  
+    }
+  //return the result
+  return (result)
+
+
+}
+
+function doubleChar(str) {
+
+  let output=str.split("");
+
+  let result = "";
+ 
+
+  for (i=0; i < str.length; i++){
+      result = result + output [i] + output[i]    
+   
+      }
+ 
+  return (result)
+
+}

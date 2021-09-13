@@ -1,0 +1,35 @@
+function removeChar(str){
+ //remove the first and last character of a string passed as a parameter
+ //create a variable to hold the first character and a variable to hold the final character
+ //define a variable called output which will become our new string to output minus the 2 characters
+var output="";  
+//output = str.slice and removing the first character and -1 for the last character of the string
+output = str.slice(1,[-1]);
+  //console.log(output) to test
+  // return the value of output
+return (output)
+
+};
+
+
+function removeChar(str){
+
+  var output="";  
+
+  output = str.slice(1,[-1]);
+
+return (output)
+
+};
+
+Other examples
+
+function removeChar(str){
+ return str.substring(1, str.length-1);
+};
+
+
+
+
+const removeChar = str => str.slice(1,-1)
+

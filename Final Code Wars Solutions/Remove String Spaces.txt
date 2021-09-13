@@ -1,0 +1,6 @@
+function noSpace(x){
+
+  let strip=x.replace(/\s/g, ''); 
+  
+  return strip;
+}

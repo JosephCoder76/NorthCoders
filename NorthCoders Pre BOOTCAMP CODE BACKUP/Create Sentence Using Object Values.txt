@@ -1,0 +1,21 @@
+//Return a string which has the specified key pair values
+//Expected format "Hello my name is <name>, I am <age> years old and I am a <job>"
+//createSentence({ name: 'Mitch', age: 29, job: 'tutor' });
+// should return "Hello my name is Mitch, I am 29 years old and I am a tutor"
+//createSentence({ name: 'Frankie', age: 31, job: 'software engineer' });
+// should return "Hello my name is Frankie, I am 31 years old and I am a software engineer"
+
+function createSentence(person) {
+ 
+ return ('Hello my name is ' +  person.name + ", " +  "I am " + person.age + " years old" + " and I am a " + person.job )
+ }
+
+
+createSentence({ name: 'Mitch', age: 29, job: 'tutor' });
+
+Using Template Literals
+function createSentence(person) {
+ 
+ return (`Hello my name is ${person.name}, and I am ${person.age} years old and I am a ${person.job}`)
+ }
+createSentence({ name: 'Mitch', age: 29, job: 'tutor' });

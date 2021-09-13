@@ -1,0 +1,33 @@
+function passed (list) {
+  let passed = 0;
+  let result = 0;
+  
+  for (let i = 0; i < list.length; i++) {
+    if (list[i] < 19){
+      result += list[i]; 
+      passed = passed +1
+    };
+  }
+  
+  if (passed === 0){return 'No pass scores registered.'};
+  return Math.round(result / passed);
+} 
+
+function passed (list) {
+  //counter varibale for how many passed the test this month
+  let counter = 0;
+  // result is the the sum of all the scores that are less than 19 as 18 is the pass mark
+  let result = 0;
+  
+  //For all elements of the array 
+  for (var i = 0; i < list.length; i++) {
+   //if the value of the element is less than 19 assign the value of that element to result, and iterate the counter variable by 1
+   if (list[i] < 19){
+      result += list[i]; 
+      counter ++};
+  }
+  //if the counter variable is 0 then return the No pass string
+  if (counter === 0){return 'No pass scores registered.'};
+  //return the average by dividing the result by counter and rounding the number to the nearest integer
+  return Math.round(result / counter);
+} 

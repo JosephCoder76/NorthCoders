@@ -1,0 +1,13 @@
+  //eveluate a boolean value and a "Yes" if true and "No" for false
+  //use an if statement
+  //Consol.log(function parameter value
+  //console.log(bool)
+  
+
+//if the value of the bool parameter == true return "Yes" else return "No"
+  if (bool==true) {
+      return "Yes"; 
+  }else {
+    return  "No";
+  }
+}

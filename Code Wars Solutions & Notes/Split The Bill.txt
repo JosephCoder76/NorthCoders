@@ -1,0 +1,192 @@
+function splitTheBill(x) {
+  
+  let counter =0;
+  let finalObj={};
+   let total =0;
+ 
+  //Function to sum all the elements of the array
+function sum( obj ) {
+   let sum = 0;
+       for( var el in x ) {
+    if( x.hasOwnProperty( el ) ) {
+      sum += ( x[el] );
+      counter = counter +1;
+    }
+  }
+  return sum;
+}
+
+let amountPaid = sum( x );
+
+let shouldPay = (amountPaid/counter);
+ 
+  for( var el in x ) {
+   sum = x
+    }
+  
+console.log( "Amount Paid £"+amountPaid + " Each person should pay:£" + shouldPay  );
+ 
+    
+    let shouldRecieve={};
+    Object.assign(shouldRecieve,x)
+    
+     const keys = Object.keys(shouldRecieve);
+   
+    Object.values(shouldRecieve).forEach((key, index) => {
+   
+     //So we work from the innermost brackets outwards. So the subtraction is done first, 
+      //subract shouldPay from each of the shouldRecieve key values, the we make them 
+      //equal 2 Decimal Places by toFixed method, then parseFloat is paseed on the final brackets, which removes
+      //any unecessary trailing zeros 
+    shouldRecieve[keys[index]] = parseFloat((shouldRecieve[keys[index]] - shouldPay).toFixed(2))
+    
+     
+     }) 
+     
+  
+      return (shouldRecieve);
+    
+   
+}
+
+function splitTheBill(x) {
+  
+  let counter =0;
+  let finalObj={};
+  let total =0;
+ 
+
+  function sum( obj ) {
+   let sum = 0;
+       for( var el in x ) {
+    if( x.hasOwnProperty( el ) ) {
+      sum += ( x[el] );
+      counter = counter +1;
+    }
+  }
+    return sum;
+}
+
+  let amountPaid = sum( x );
+
+  let shouldPay = (amountPaid/counter);
+ 
+  for( var el in x ) {
+   sum = x
+    }
+  
+console.log( "Amount Paid £"+amountPaid + " Each person should pay:£" + shouldPay  );
+ 
+    
+    let shouldRecieve={};
+    Object.assign(shouldRecieve,x)
+    
+     const keys = Object.keys(shouldRecieve);
+   
+    Object.values(shouldRecieve).forEach((key, index) => {
+   
+     shouldRecieve[keys[index]] = parseFloat((shouldRecieve[keys[index]] - shouldPay).toFixed(2))
+         
+     }) 
+       
+      return (shouldRecieve);
+       
+}
+function splitTheBill(x) {
+  
+   let counter =0;
+   let finalObj={};
+   let total =0;
+ 
+
+function sum( obj ) {
+   let sum = 0;
+       for( var el in x ) {
+    if( x.hasOwnProperty( el ) ) {
+      sum += ( x[el] );
+      counter = counter +1;
+    }
+    }
+    return sum;
+  }
+
+  let amountPaid = sum( x );
+
+  let shouldPay = (amountPaid/counter);
+ 
+  for( var el in x ) {
+   sum = x
+    }
+  
+  console.log( "Amount Paid £"+amountPaid + " Each person should pay:£" + shouldPay  );
+ 
+    
+   let shouldRecieve={};
+   Object.assign(shouldRecieve,x)
+    
+   const keys = Object.keys(shouldRecieve);
+   
+    Object.values(shouldRecieve).forEach((key, index) => {
+   
+ 
+    shouldRecieve[keys[index]] = parseFloat((shouldRecieve[keys[index]] - shouldPay).toFixed(2))
+    
+     
+     }) 
+     
+  
+      return (shouldRecieve);
+    
+   
+}
+
+Refactored
+
+function splitTheBill(x) {
+  
+   let counter =0;
+   let finalObj={};
+   let total =0;
+ 
+
+function sum( obj ) {
+   let sum = 0;
+       for( var value in x ) {
+    if( x.hasOwnProperty( value ) ) {
+      sum += ( x[value] );
+      counter = counter +1;
+    }
+    }
+    return sum;
+  }
+
+  let amountPaid = sum( x );
+
+  let shouldPay = (amountPaid/counter);
+ 
+  for( var el in x ) {
+   sum = x
+    }
+  
+  console.log( "Amount Paid £"+amountPaid + " Each person should pay:£" + shouldPay  );
+ 
+    
+   let shouldRecieve={};
+   Object.assign(shouldRecieve,x)
+    
+   const keys = Object.keys(shouldRecieve);
+   
+    Object.values(shouldRecieve).forEach((key, index) => {
+   
+ 
+    shouldRecieve[keys[index]] = parseFloat((shouldRecieve[keys[index]] - shouldPay).toFixed(2))
+    
+     
+     }) 
+     
+  
+      return (shouldRecieve);
+    
+   
+}
+

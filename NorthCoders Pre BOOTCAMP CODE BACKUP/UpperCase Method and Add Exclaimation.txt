@@ -1,0 +1,18 @@
+/* Solution 1 
+return the word passed as a paramter to the function, using the toUpperCase method and concatenate with an exclaimation mark
+*/
+function exclaimWord(word) {
+
+return(word.toUpperCase() + '!')
+
+}
+
+/* Solution 2
+Although solution one is shorter there may be a time where we would need to do further maniuplation to a string, array or object key and or values. So
+sometimes having variables being assigned values provides us greater scope on larger problems and soluitons, and allows us to break the code down in to
+clearer sections for people reviewing our code to easier understand
+*/ 
+function exclaimWord(word) {
+let output =word.toUpperCase() + "!";
+return (output)
+}

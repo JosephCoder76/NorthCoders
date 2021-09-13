@@ -1,0 +1,31 @@
+function sumArray(array) {
+  
+//Eveluate on null or empty array to return 0, else sort the array in to ascending order a<b instead of a,b woudl return descending order
+ let sum = 0; 
+ if (array === null) return 0;
+ array.sort(function(a,b){
+ return a -b;
+ });
+
+//Create new array now the array is sorted in to order, and remove the first and last elements, we could use a shift and a push instead of a slice.    
+ let newArray = array.slice(1,-1);
+ for (i=0; i < newArray.length; i++) sum += newArray[i];
+ return sum;
+      
+  
+}
+
+function sumArray(array) {
+  
+ let sum = 0; 
+ if (array === null) return 0;
+ array.sort(function(a,b){
+ return a -b;
+ });
+ array.pop()
+ array.shift() 
+ 
+ let newArray = array
+ for (i=0; i < newArray.length; i++) sum += newArray[i];
+ return sum;
+}

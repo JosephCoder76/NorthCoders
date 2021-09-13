@@ -1,0 +1,25 @@
+function luckyCandies(prizes, k) {
+  //candies must be multiples of k condition
+ 
+   //add all the elements to get the sum
+  let sum = 0;
+  let remainder =0;
+  let maxCandies=0;
+  let newArray =[];
+  
+  for (let i =0; i<prizes.length; i++){
+    sum = sum +prizes[i];
+  }
+  
+  remainder = sum % k
+  maxCandies= sum-remainder
+  console.log(`Remainder =` + remainder)
+  
+  console.log('Max Candies = ' + maxCandies)
+  
+  let tempSum = (50+40+30+20+10)
+  let remainder2 = tempSum 
+  console.log(remainder2)
+  
+  return(maxCandies)
+}

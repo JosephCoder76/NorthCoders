@@ -1,0 +1,32 @@
+function cost (mins) { 
+console.log();
+  //if number of minutes =60 charge is $30
+  //grace period + 5mins tolerance no extra charge
+  //60 mins $30
+  //30 mins is $10
+  let sum=0
+  const hour = 30;
+  const half=10;
+  var hourly = 65;
+  var halfHourly =35;
+  var extraMins=0;
+  var extraCharges=0;
+  var final = 0;
+  //First Hour
+  if (mins < hourly){
+    sum = sum+hour;
+  
+  //Subsequrnt half hours
+  } else if
+    (mins > hourly ){
+    extraMins = mins - hourly;
+      console.log(extraMins)
+      extraCharges = extraMins / 30 
+      extraCharges =Math.ceil(extraCharges)*10;
+      console.log(extraCharges);
+    // let final = sum + extraCharges;
+      sum = hour + extraCharges;
+  }
+  return (sum);
+} 
+  

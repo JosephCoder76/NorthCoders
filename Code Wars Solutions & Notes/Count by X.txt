@@ -1,0 +1,32 @@
+//This function takes 2 parameters x and n, we then need to return an array with all the multiples of x
+//for example the (2,5) should return 2,4,6,8,10 five multiples of 2
+
+function countBy(x, n) {
+//define a new array z
+  var z = [];
+  //console.log()
+  
+//for loop starting at 1 and exiting execution if i is less than or equal to n iterate i by 1 per loop
+for ( i =1; i<=n; ++i){
+// let the variable m = sum of i * x which is the multiples of parameter 
+    let m = (i * x);
+  //push the value of m per loop in to the z array
+    z.push(m)
+    
+  }
+//return the z array
+  return z;
+}
+
+
+function countBy(x, n) {
+  var z = [];
+  //console.log()
+  for ( i =1; i<=n; ++i){
+    var m = (i * x);
+  
+    z.push(m)
+    
+  }
+  return z;
+}

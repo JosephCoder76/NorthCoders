@@ -1,0 +1,21 @@
+function createArray(number){
+  var newArray = [];
+//The For loop needs to itterate and add a value to the counter variable otherwise the exit condition counter <= number will never execute, thus an infinite loop
+  for(var counter = 1; counter <= number;){
+    newArray.push(counter);
+  }
+  
+  return newArray;
+}
+
+Solution
+
+function createArray(number){
+  var newArray = [];
+  //it looks lie the iteration termination statement is the problem, set this to the length of the array
+  for(var counter = 1; counter <= number; counter++){
+    newArray.push(counter);
+  }
+  
+  return newArray;
+}

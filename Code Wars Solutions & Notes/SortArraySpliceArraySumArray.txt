@@ -1,0 +1,44 @@
+function sumArray(array) {
+  //check if array is null
+  //initial sum variable
+  //sort the array
+  //remove highest and lowest
+  //sum the numbers
+  //return sum
+  
+  //if statement to exit the function if the value of the array is null
+  if (array === null) return 0;
+  //else decalre a variable for sum
+  let sum = 0;
+  //now we sort the array using the compare function so we get the numbers in ascending order
+  // 1,2,6,8,10
+  array.sort(function(a,b){
+  // a -b retuns increasing list of numbers from the sorted array 1,2,6,8,10
+    //a < b returns highest to lowest numbers in the array 10,8,6,2,1
+    return a -b;
+   });
+    
+  //so now the array numbers are sorted in to ascending order we want to remove the first and last element
+  //the lowest and hishest numbers
+  let newArray = array.slice(1,-1);
+  //console.log(newArray)
+  //now sum the numbers of the array as we have now removed the highest and lowest numbers from the array using
+  //the splice function, sum now equals the value of each array element of the newArray that we iterate through
+  for (i=0; i < newArray.length; i++) sum += newArray[i];
+    //console.log(sum)
+  return sum;
+      
+  
+}
+
+
+function sumArray(array) {
+	let sum = 0;
+	if (array === null) return 0;
+	array.sort(function(a,b){
+	return a -b;
+ 	});
+	let newArray = array.slice(1,-1);
+	for (i=0; i < newArray.length; i++) sum += newArray[i];
+	return sum;
+	}

@@ -1,0 +1,57 @@
+ //Array of objects, Age property
+ //Sum the age key values of the array of objects
+ //Define a total variable for output
+ //Loop through all the elements of the array incrementing the sum of each object value for age
+
+ /*Examples:
+
+findTotalAge([]); // should return 0
+
+findTotalAge([{ name: 'Sam', age: 31 }]); // returns 31
+
+findTotalAge([
+  { name: 'Sam', age: 20 },
+  { name: 'Anat', age: 30 },
+  { name: 'Alex', age: 40 },
+]);
+ returns 90
+*/
+
+function findTotalAge(people) {
+  //Array of objects, Age property
+  //Sum the age key values of the array nof objects
+
+let total =0;
+
+for (let i = 0; i <= people.length - 1; i++) {
+    	total = total +people[i].age
+        	
+    	}
+      console.log(total)
+      return (total);
+
+ }
+
+//USING A FOR IN LOOP
+function findTotalAge(people) {
+ 
+  let total =0;
+
+  for (let el in people) {
+    total = total +people[el].age
+        	
+    	}
+      //console.log(total)
+      return (total);
+
+ }
+
+
+findTotalAge([
+  { name: 'Sam', age: 20 },
+  { name: 'Anat', age: 30 },
+  { name: 'Alex', age: 40 },
+]);
+
+
+

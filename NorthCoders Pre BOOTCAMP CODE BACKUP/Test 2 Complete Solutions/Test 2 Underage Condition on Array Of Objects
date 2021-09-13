@@ -1,0 +1,29 @@
+// Please complete this function...
+
+//2 parametrs user, and city 2nd arg string
+//Add city as a property
+//then return the new updated object
+//Do not update the user object of the is not called with a city dont update the user object
+function addCityProperty(user, city) {
+  //Create a condition to only add the city if no city is passed, the below uses a truthy so if
+  //the city parameter is passed as a parameter, then we equate to truie and add the key
+  //and its associated paired value, else we just return the object
+
+if (city){
+ 
+  user['city'] = city;
+}
+
+ return (user)    
+  
+
+}
+
+addCityProperty({ name: 'Mitch', age: 29 }, 'Manchester');
+// should return { name: 'Mitch', age: 29, city: 'Manchester' }
+
+//addCityProperty({ name: 'Emily', age: 30 }, 'London');
+// should return { name: 'Emily', age: 30, city: 'London' }
+
+//addCityProperty({ name: 'Anthony', age: 93 });
+// should return { name: 'Anthony', age: 93 }

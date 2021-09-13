@@ -1,0 +1,17 @@
+//return if modulus divided by 2 is false or true, true returns 0 else returns ramiander this 'Evebn string is output ? is the 
+//equivalent to if statement
+
+function even_or_odd(number) {
+  return number % 2 ? "Odd" : "Even"
+}
+
+or 
+function even_or_odd(number) {
+if (number%2<1){
+
+return 'Even'}
+{
+
+return 'Odd';}
+}
+even_or_odd(3);

@@ -1,0 +1,40 @@
+//Solution 1
+function allOscarWinners(films) {
+
+//The find method finds the first occurance, and as the logic we are using only need false to be found
+//once to return this boolean, we equate to the false first and anything else, all true return true
+if(films.find(el => el.wonOscar === false)){
+   return false
+         }
+     return true
+}
+
+allOscarWinners([{ title: 'Ghost World', wonOscar: false }]);
+
+//Solution 2 using For in loop
+//Where there are multiple objects we must loop through all the elements first eveluating the condition of false, if no instances of false
+//are found then the for lopp completes and moves on to the only other available outcome true 
+
+
+
+//Solution 3 use a standard for loop
+//If all the films have won an oscar return true boolean, else if any of the films are not true, return false boolean
+//For loop through the entire array of objects for all elements from 0 to the .length of the films array
+//For each loop evalute the value of the objects .wonOscar key and if it equals flase return false
+//Else return true
+
+function allOscarWinners(films) {
+
+    for (let i = 0; i<films.length; i++){
+        if(films[i].wonOscar == false){
+        return false
+         }
+       
+    }
+   //Where there are multiple objects we must loop through all the elements first eveluating the condition of false, if no instances of false
+   //are found then the for lopp completes and moves on to the only other available outcome true   
+     return true
+}
+
+allOscarWinners([{ title: 'Forrest Gump', wonOscar: true }])
+

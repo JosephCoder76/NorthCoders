@@ -1,0 +1,5 @@
+//Returns the sum of a * b
+
+function multiply(a, b){
+ return a * b
+}

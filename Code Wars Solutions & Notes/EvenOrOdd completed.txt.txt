@@ -1,0 +1,26 @@
+//Modulo Operator % divides a number and and returns value, if 0 fully divisable by 2 so an even number else and odd number.
+//Note that this also works for negative number not just positive integers
+//So we pass 2,0,7, and 1 from the sample tests no need to add to the code blocl the function calls.
+//If the number is divisable by 2(Modulo operator) with an explicit remainder of 0 so it must return the integer value and not a string, return the string 'Even'
+//the function then terminates as the Even condition is met, we can then add the return 'Odd'; statement as this sits outside of the function
+//and therefore picks up the odd numbers or the false conditions, neat way of not needing to code in an else statement.
+
+function even_or_odd(number) {
+  if (number % 2 === 0) {return 'Even'}
+  return 'Odd';
+}
+
+Example 2
+/The below is a shortcut was of doing an if statement the ? instructs if %2 does not fully divide by 2 return "Odd" else "Even".
+   return number % 2 ? "Odd" : "Even"
+}
+
+Example 3
+function even_or_odd(number) {
+ if (number%2 ==0){
+   return "Even";
+} Else {
+  return "Odd;
+}
+}
+

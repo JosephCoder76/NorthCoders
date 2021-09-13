@@ -1,0 +1,5 @@
+Press Ctrl, Shift and I to open the Developer Tools
+
+Click on Sources, and Snippets menu, Add new snippet and copy code in here, then click on the Run, or CTRL + Enter to execute code. Log of output will return
+below.
+

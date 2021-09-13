@@ -1,0 +1,19 @@
+//We return on less on 0 first otherwise if we return on less than 50 first the code with exit on this return and never reach the <=0 statement,
+//so always remember when using return statements, that we must consider the the order of statements to be returned. in this case 0, > 50 and then <=50
+
+function greaterThan50(number) {
+	 if (number <=0){
+	   
+	   return ("");
+	 }
+	 
+	 else if (number>50){
+	 return ('Correct!');
+	 }
+	 else if (number<=50) {
+	   return ('Incorrect!');
+	 }
+	 
+	}
+
+

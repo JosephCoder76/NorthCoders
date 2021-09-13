@@ -1,0 +1,32 @@
+function solution(digits){
+
+//declare the variable
+let best = "";
+//for loop to iterate through the string which is basically an array
+for (let i = 5; i <= digits.length; i++) {
+    //use slice to cut the string up in to segments of 5 numbers and assign to the slice variable
+    let slice = digits.slice(i - 5, i);
+    //if the value of slice is greater than best best = slice the largest string sequence of characters
+    if (slice > best) best = slice;
+    //Make the string an Integer using parseInt
+    best =parseInt(best)
+
+}
+//return best  
+return(best);
+
+}
+
+function solution(digits){
+
+let best = "";
+for (let i = 5; i <= digits.length; i++) {
+    let slice = digits.slice(i - 5, i);
+    if (slice > best) best = slice;
+    best =parseInt(best)
+
+}
+  
+return(best);
+
+}

@@ -1,0 +1,22 @@
+function findNeedle(haystack) {
+  //console.log()
+  
+  //We need to find the element value of 'needle' in the array which is passed as a parameter to the function
+  //return the following string "found the needle at position" & concatenate with the index number which is the position
+  //where the string "needle" was found.
+  
+  //first we need to find the "needle" string in the array haystack, so we declare a variable result which will equal the value
+  // of the element index where the "needle" string is found, we use the indexOf method to retrieve the index number of the value
+  //"needle"
+  let result= haystack.indexOf("needle");
+  //console.log(result)
+  //now we return the string concatenated with the value of result which is the index number where the "needle" string was found
+  return ("found the needle at position " + result)
+  
+}
+
+function findNeedle(haystack) {
+  let result= haystack.indexOf("needle");
+   return ("found the needle at position " + result)
+  
+}

@@ -1,0 +1,39 @@
+function luckyCandies(prizes, k) {
+  //candies must be multiples of k condition
+ 
+   //add all the elements to get the sum
+  let sum = 0;
+  let remainder =0;
+  let maxCandies=0;
+  let highestNumber=0;
+  
+  //Sort Array in to desceding order highest to lowest values
+ prizes.sort(function(a,b){
+ return b -a;
+ });
+
+  console.log(prizes)
+  //Sum all the elements of the array
+  for (let i =0; i<prizes.length; i++){
+    sum = sum +prizes[i];
+    
+  }
+  
+  highestNumber = sum;
+         
+  //Find the highest sequence of numbers in the array divisable by the multiplier, sort the array first in to desceding
+  //and work way to lowest so we know if we find a match early on it will be the highest number
+  
+ 
+  
+  console.log(highestNumber)
+  
+  console.log(`Remainder =` + remainder)
+  
+  console.log('Max Candies = ' + maxCandies)
+  
+
+  
+  
+  return(highestNumber)
+}

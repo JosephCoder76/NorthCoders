@@ -1,0 +1,7 @@
+function positiveSum(arr) {
+//It appears the a will be the accumulater value so the return value for the sum of the function, b is the element of the array itself, then we have
+// a formula that states that if the value of b is greater than 0 or 0 add the value to the accumulater a which becomes the final sum of all the 
+//positive numbers in the array which is returned
+return arr.reduce((a,b)=> a + (b >0 ? b : 0),0);
+}
+

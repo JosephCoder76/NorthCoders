@@ -1,0 +1,58 @@
+function luckyCandies(prizes, k) {
+  //candies must be multiples of k condition
+  //Return maximum amount of candies JOhn can get
+  //console.log()
+  //Incorrect answer for prizes = [1,2,3,4,5], k = 5: expected undefined to equal 15
+  //So we know that the output should = 15
+  //Each element is a bag of candies
+  //Whole bag only do full integers returned only
+  //Sum all the array elements through a for loop and find the largest multiple of K from the sum of the elements
+  //Lets get the first test working first to return 15 a multiple of 5
+ 
+  //So the below worked and got us started, now I realize we have to find the the largest multiple of k available in the 
+  //sum of the array, so we need a For Loop that will sum all the elements, that we can do already. Then we now need
+  //a comparison to compare the result and if it does not return a full integer it keeps on looping until a multiple os found
+  //Thinkg of a for loop with modulos as the exit condition when it returns 0 from the sum.
+  // let sum=0;
+  
+ // for (let i=0; i<prizes.length; i++){
+ //   sum = sum + prizes[i];
+  
+//  }
+//console.log(sum)
+  let sum = 0;
+  let test =0;
+  
+  let maxCandies =0;
+  
+  //GET THE SUM OF ALL THE ELEMENTS OF THE ARRAY
+  for (let i=0; i<prizes.length; i++){
+     sum = sum + prizes[i];
+   }
+ 
+  
+  //IF THE REMAINDER OF THE SUM DIVIDED K IS 0 ASSIGN THE VALUE OF THE SUM TO MAX CANDUES AS K IS A TRUE MULTIPLE OF TEH ARRAY
+  //for (let i=0; i<prizes.length; i++){
+    if (sum %k == 0){    
+     maxCandies = sum
+     }
+   
+  // WE NEED TO BE ABLE TO SUM ALL THE ELMENTS OF THE ARRAY IN DIFFERENT COMBINATIONS, 
+  //ONLY RETURNING THE HIGHEST SUMS THAT ARE INTERGERS
+  //AND THEN WE NEED TO NARROW THIS DOWN TO THE HIGHEST INTERGER SUM AVAILABLE
+    if (sum %k !==0){    
+    
+    prizes.shift()
+     //test = test + prizes[i];
+     }
+  
+  //Return the multiples of the elements in the array as long as their is no remainder after modulos of the value of k
+  //for example mutiples of 5 in the first function call
+  let newArray = prizes.filter(el => el % k === 0);
+ 
+     console.log(newArray)
+
+  return (maxCandies)
+  
+  
+}

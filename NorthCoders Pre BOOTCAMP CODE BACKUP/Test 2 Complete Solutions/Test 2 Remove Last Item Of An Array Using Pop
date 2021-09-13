@@ -1,0 +1,15 @@
+// please complete this function...
+//Remove the last item of the array with splice
+
+function removeLastItem(array) {
+
+array.pop()
+  
+ return (array)
+}
+
+//removeLastItem([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+// should return [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+removeLastItem(['a', 'b', 'c', 'd', 'e']);
+// should return ['a', 'b', 'c', 'd']

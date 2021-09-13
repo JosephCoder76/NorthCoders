@@ -1,0 +1,26 @@
+// Please complete this function...
+
+//Sum the price object keys of the array
+function findTotalPrice(items) {
+  
+let total =0;
+
+  for (let el in items) {
+    total = total +items[el].price
+        	
+    	}
+      //console.log(total)
+      return (total);
+
+ }
+
+ //findTotalPrice([]); // should return 0
+
+//findTotalPrice([{ product: 'Mars bar', price: 20 }]); // returns 20
+
+findTotalPrice([
+  { name: 'mars bar', price: 50 },
+  { name: 'aero', price: 70 },
+  { name: 'galaxy', price: 60 },
+]);
+// returns 180

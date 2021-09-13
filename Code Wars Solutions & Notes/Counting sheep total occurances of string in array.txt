@@ -1,0 +1,35 @@
+function countSheeps(arrayOfSheep) {
+//  console.log() test initial output
+  //now we need to iterate through a for loop to count the number of true values in the array
+  //lets define a counter variable
+
+  let counter = 0;
+  
+  for (i=0; i < arrayOfSheep.length; i++){
+  if (arrayOfSheep[i] ==(true))
+            
+    counter =  counter +=1;
+ 
+     }
+  console.log("'There are "  + counter +  " sheeps in total'")  
+  return counter
+     //console.log(counter);
+    
+   
+}
+
+function countSheeps(arrayOfSheep) {
+
+  let counter = 0;
+  
+  for (i=0; i < arrayOfSheep.length; i++){
+  if (arrayOfSheep[i] ==(true))
+           
+  counter =  counter +=1;
+ 
+     }
+  console.log("'There are "  + counter +  " sheeps in total'")  
+  return counter
+      
+
+}

@@ -1,0 +1,25 @@
+function monkeyCount(n) {
+
+  //define an empty array monketArray
+const monkeyArray =[];
+  //for loop strating at 1
+  for (let i=1; i<=n; ++i){
+    //now we use the push method from the value of i to add the number or iterration to monkey.Array
+   monkeyArray.push(i);
+}
+  //finally we return the monkeyArray
+    return monkeyArray;
+    //return monkeyArray;
+   
+
+}
+
+function monkeyCount(n) {
+
+  const monkeyArray =[];
+ 
+  for (let i=1; i<=n; ++i){
+  monkeyArray.push(i);
+}
+  return monkeyArray;
+}

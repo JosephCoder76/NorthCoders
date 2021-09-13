@@ -1,0 +1,11 @@
+We have a For loop that iterates through the entire array of objects as it terminates the loop when the list.length value is met, for each iteration of the for loop we execute an if statement that takes the current list element i and compares it to the next element i value using +1 if they are not equal to each other return false else return true
+
+
+function isSameLanguage(list) {
+  for (let i = 0; i < list.length - 1; i++) {
+    if (list[i].language !== list[i + 1].language) {
+      return false
+    }
+  }
+  return true
+}

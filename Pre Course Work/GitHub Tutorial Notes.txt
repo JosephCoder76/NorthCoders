@@ -1,0 +1,115 @@
+Part One
+1. Repository, archive for storing files for a project(s)
+2. Commit, "Save"
+3. Commit hash, is a hexidecimal construct that can is used to identify each commit in the repository.
+
+
+Branches
+1. Branches can be used to try out new ideas, or we could be a development team working on different parts of a project, maybe debugging code. Then we can merge
+the branche(s) back in to the main branch.
+2. Main is the master branch of the repository.
+3. We can create a new branch from a new commit so we dont have to create the branch before hand we can create it on the fly when we do a commit.
+4. Branching makes it easier to define labels for the changes and commits rather than just relying on the history of commits.
+5. Insights and network option provides a graphical view of the commits to the repository and the brnaches, very useful for project topology.
+
+Pull Requests & Merge
+1. Branch requests that changes are pulled in to mian. So main has to pull the changes from the branch and merge them back in to main.
+2. Click on Compare & Pull Request.
+3. Click on create pull request.
+4. Click on Merge pull request.
+5. Click on confirm merge.
+6. Insights & Network will now show that the branch has merged back in to main.
+
+Fork & Pull Requests
+1.Fork is the ability to take a full repository in gitHub in one account and make a duplicate of it to work on in your account.
+2. Pull requesting, send a pull reuqest and the destination has to accept the request to pull it in. Push changes out, and the destination chooses to pull in to the repository.
+3. Make sure that you comment your commits well.
+4. You could create a new branch to denote changes for other users, easier to read and visually see in insights, network.
+5. Propose file change for changes to a forked repository.
+6. So by using Fork we can ammend a repositoy in gitHub and then  pass the whole project\repository back to the other user, commenting commits or adding a seperate
+branch to highlight the changes made, so the main owner of the repository can accept the pull request and merge the changes in themselves, they can then choose to
+merge the branch containing any changes back in to main if they so desire.
+7. As as part of accepting the pull request you can comment, such as thank you for this change etc...
+
+gitHub Issues
+1. Issues Tab is a space to leave messages about issues peratining to a problem such as a bug in the code etc... Feature request, questions etc...
+2. You can drag image files and screen shots in but you need to do a CTRL + V for embedding the file otherwise justt he link url gets copied in.
+3. You can add labels, assign to users, submit issues etc..
+4. Issues are open until closed and resolved.
+5. Refer to issues in comments using the issue id number prefixed with a #10
+6. Once this is commited then you can see on the issue that said user has added an entry that addresses this issue.
+7. This creates an audit log of issues and we can click on the changes that have resolved the issue.
+8. If the author of the issue believes that the change has fixed the issue, they can click on done.
+9. We can use the fixes keyword with # issue number and this will automatically close the issue.
+10. Each close creates a commit id so we can reference the fixes directly using the hash code.
+11. We can reference a comit in a fix of an issue. 
+12. Copy the hash code from the browser and you can create an issue references a commit. This makes it easier to get directly to the changes, paste the hash code
+in to the text of the issue. This resolves to a link in the text that takes you directly to the commit.
+
+Working with gitHub command Line
+1. Unix commands
+2. CD change directory
+3. pwd pritn working directory
+4. ls lists current working directory contents.
+5. Open . from a terminator shell opens the curretn directory in an explorer window.
+6. Use the Tab key to autofill directories etc..
+7. export PS1="Command Prompt > "      Choose your prompt text
+8. Cd drag and drop directory saves typing in a long directory path.
+
+Working with Git locally
+1. git command in the terminal lists all the commands.
+2. Create a git repository locally, 
+3. Cloning take a gitHub repository and copying it locally to modify using git
+4. Create a repository on gitHub and then click on Code and select the path of the repository for cloning
+5. git clone https://github.com/JosephCoder76/Its-Local-Baby.git 
+6. edit with vim, save by using :wq!
+7. git status
+8. git add, adds a file to staging prior to a comit.
+9. get commit -a skips the staging area and comitts the changes to the repository. -a switch commits all
+10. commit - a  -m "This is commiting my first change using git"
+11. update your account details for git to use.
+12. use git config --list to check username and email have been set correctly.
+13. git status to check changes have taken place.
+14. git log lists the history of the commits you can use -2 to list justt he last 2 commits.
+15. Push act of sending to gitHubm, pull is the other way.
+16. git remote, gitHub is a remote instance of your repository
+17. git remote lists all the remotes asscoiated with my repository
+18. git remote -v lists the url of the remote gitHub servers associated with the repository
+19. git push remote name of branch
+20.git push origin main
+
+https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token
+
+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
+
+$ git clone https://github.com/username/repo.git
+Username: your_username
+Password: your_token
+
+
+git push origin main
+Username: your_username
+Password: your_token
+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
+
+
+Git Init and Add
+1. Create a new repository locally using git
+2. git init 
+3. git status now lists all the untracked files.
+4. Now we need to track these files in this directory using git
+5. Workflow with git
+6. git add (this add the files to the staging area) so they are not yet commited to the repository.
+7. So we can check in and out files from the staging areas before makign final commits.
+8. git add adds to the staging area
+9. git comit -a does add and comitt all at once.
+10. So lets do staging first
+11. git add . the period adds all the files and directories in toi the repository
+12. So now all my files and sub directories are tracked and have been added to the staging area.
+13. git status lists all the files in staging ready for commit
+14. git rm <file-name>, removes a defined file from the staging area
+15. git rm - r . removes all the files and directories from the current path
+16.
+
+
+

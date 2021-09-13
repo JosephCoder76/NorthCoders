@@ -1,0 +1,47 @@
+//Function call
+function duplicateEncode(word){
+//So that we can ignore the case of the strings passed as parameters we use the toLowerCase function to make sure
+//the strings are all converted to their lower case counterparts.
+  word=word.toLowerCase();
+  characterOccurance = {} // will be {"char": "number of occurance of each seperate character in the string"} Each
+  //character will be stored as an object array
+
+  /*For the word parameter/string we use the split method and the "" in the brackets instruct the split method to
+  split on and individual character basis, the ForEach which calls a function once for each element in an array, in this case
+  we will be calling the char function which will ensure that each of the characters returned from the array will be represented
+  in a string format, this is useful as it prevents unintennded type mismatch and or conversion the => operator is instructing
+  that the value of the current char in the element of the array must equal to or greater than "" so it basically has a single
+  character value, this forEach loop will repeat until we have iterated throughout the entire word array
+  */
+   
+  word.split('').forEach(char => { 
+  //Next we have an if statement which evaluates to there being any type of character value assigned to the characterOccurance
+  //variable, if the condition is met then we increase the occurance count of characterOccurance variable by a value of 1
+    
+    if(characterOccurance[char]){ // if exist 
+       characterOccurance[char] += 1; // increase the occurance count
+  //else we dont find another occurance of the character in the string so we set the characterOccurance value to 1
+     }else{
+       characterOccurance[char] = 1;// set occurance to one for each character which will be stored as an object array, with its
+       //count value "DOUBLE CHECK THIS IS RIGHT" logically it makes send though.
+     }
+  })
+  
+  //let decalres a local variable in scope to this block statement. Here we decalre the local variable of output to equal the
+  //result of using the split method on the word array for each character that does not equal 1 occurance we output ( else
+  //we output ) this logical is predefined by the ?, the .map function creates a new array using the parent function which
+  //will be the result of the word.split function, and then the .join function creates a new string by concatenating all
+  //the elements of the array, so for each character that => equal to or greater than characterOccurance(current character)
+  //we add ( to the value of output, else false and we add )
+  let output = word.split('').map(
+                    char => characterOccurance[char] == 1 ? '(' :')' 
+                    ).join('');
+ //Finally we output the values of the output variable
+  return output;
+
+}
+//function calls passing the strings for processing as parameters
+duplicateEncode("din")
+duplicateEncode("recede")
+duplicateEncode("Success")
+duplicateEncode("(( @")

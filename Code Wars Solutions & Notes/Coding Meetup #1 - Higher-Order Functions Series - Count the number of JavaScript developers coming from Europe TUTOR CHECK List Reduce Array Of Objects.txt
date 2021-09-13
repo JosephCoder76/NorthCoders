@@ -1,0 +1,23 @@
+function countDevelopers(list) {
+
+//let the europe variable equal the result of the reduce method, we iterate through an array of objects, key in this iterator
+//for each of the keys in the list array of objects, property is the parameter for the property we are going to search
+  //for with the reduce function, these 2 parameters could be labelled with whatever is appropriate, they are basically
+  //just parameters for the reduce function to use. We pass the return a 1 or a 0 dependant on if the condition is
+  //true or false in this case both the continent key value must equal 'Europe' && the language key value must =
+  //JavaScript the ? is used to return a integer value of 1 or 0 back to the key value
+  //Check my understanding of this syntax with a Tutor!!!
+ let europe = list.reduce((key, property) => (property.continent === "Europe" && property.language === 'JavaScript' ? key + 1 : key),   0 );  
+ //let JavaScript = list.reduce((acc, property) => (property.language === "JavaScript" ? acc + 1 : acc),   0 ); 
+  //return(numberOfOccurence);
+ return (europe)
+
+}
+
+function countDevelopers(list) {
+
+ let europe = list.reduce((key, property) => (property.continent === "Europe" && property.language === 'JavaScript' ? key + 1 : key),   0 );  
+ 
+ return (europe)
+
+}

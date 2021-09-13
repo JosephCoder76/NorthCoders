@@ -1,0 +1,33 @@
+function positiveSum(arr) {
+  //pseudo code steps
+  //initialize empty variable sum
+  // go through arr
+  // check if number is positive
+  //sum numbers
+  //add numbers to sum
+  //return sum
+  
+  //initiate a variable for the sum of the positive number sin the array
+  let sum =0;
+  //console.log(sum)
+  //for loop starts at 0 for i, continues until the end of the array is met arr.legnth, add +1 to i each loop
+  for (i = 0; i < arr.length; i++ ){
+  //console.log(arr[i])
+    //if the value of the array index (i) which we are iterating through with the for loop for each element
+    //in the array is greater than 0, thus a positive number, add the value of the arr element to sum
+    if (arr[i] >0) sum += arr[i];//console.log(arr[i]);
+}
+  //return has to be outside the for loop or it will end execution after first for loop
+  //return the sum of all the positive numbers
+  return sum;
+  }
+
+function positiveSum(arr) {
+  
+  let sum =0;
+  for (i = 0; i < arr.length; i++ ){
+    if (arr[i] >0) sum += arr[i];
+}
+  
+  return sum;
+  }

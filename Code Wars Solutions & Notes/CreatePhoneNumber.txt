@@ -1,0 +1,21 @@
+function createPhoneNumber(numbers){
+
+  //Create a newArray using the numbers array
+  newArray = numbers;
+   //Add the closed parentheses as a string at position 3 of the array using the dont overwrite parameter 0
+  newArray.splice(3,0, ") ");
+  //Add the minus character as a string at position 7 of the array using the dont overwrite parameter 0
+  newArray.splice(7,0,"-");
+  //return the below string which adds the 1st open Parentheses + the newArray values we have been constructing and 
+  //manipulating throughout the function, then use the .join function to strip out all the commas and finally add 
+  //quotartion marks to the end of the outputted string.
+ return("("+newArray.join('')+"");
+
+} 
+//Call the createPhoneNumber function passing in an array of numbers as the parameters for us to contract the formatted
+//telephone numbers
+createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])// "(123) 456-7890")
+createPhoneNumber([1, 1, 1, 1, 1, 1, 1, 1, 1, 1])// "(111) 111-1111")
+createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])// "(123) 456-7890")
+
+

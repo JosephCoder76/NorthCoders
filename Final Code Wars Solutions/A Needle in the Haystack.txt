@@ -1,0 +1,7 @@
+//Returns the index number of the "needle" string in the array and this is concatenanted with the string in the return statement
+
+function findNeedle(haystack) {
+  let result= haystack.indexOf("needle");
+   return ("found the needle at position " + result)
+  
+}

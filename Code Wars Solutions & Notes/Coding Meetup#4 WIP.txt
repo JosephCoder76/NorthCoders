@@ -1,0 +1,38 @@
+function getFirstPython(list) {
+
+  //Declare the pythonDeveloeprs variable
+  var pythonDevelopers="";
+  
+ // if the condtion is true, return the firstname and country of the first object where the Python value is found
+  // so we iterate through all the elements of the list object and if we find the string Python we pass this value to the pythonDevelopers variable
+  //so the pythonDevlopers becomes an array of the list object containing just the one object, than one we want to pull the values from.
+  if(pythonDevelopers = list.find(el => el.language === 'Python')){
+    
+    //We now have to structure a new format to output just the firstName and country key values. so we use Template Lierals so we can pass 
+    //the concatenation of firstName and country to the pythonDevelopers variable
+    pythonDevelopers= `${pythonDevelopers.firstName}, ${pythonDevelopers.country}`
+    //Finally we return the value of pythonDevelopers
+    return pythonDevelopers
+  }
+  {
+   //else the condition is false so we return the below statement for no Python Developers
+    return ("There will be no Python developers");
+  } 
+
+}
+
+Finished Code
+function getFirstPython(list) {
+
+  var pythonDevelopers="";
+  
+  if(pythonDevelopers = list.find(el => el.language === 'Python')){
+    
+    pythonDevelopers= `${pythonDevelopers.firstName}, ${pythonDevelopers.country}`
+    return pythonDevelopers
+  }
+  {
+    return ("There will be no Python developers");
+  } 
+
+}

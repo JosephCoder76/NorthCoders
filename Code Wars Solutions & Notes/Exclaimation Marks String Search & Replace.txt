@@ -1,0 +1,18 @@
+function replace(s){
+//ok so we need to replace all the vowels in the strings with exclaimation marks
+  //console.log();
+
+  //create a variable and use the Javascript replace fundtion to replace all the vowels both lower and Upper case need to be
+  //provided / g is a global parameter of the replace function, sothe function searches for all the vowels in the string
+  //an not just the first occurance, and then for each occurance we replace the character with a !
+  var output = s.replace(/([aeiouAEIOU])/g, "!");
+ 
+  return (output);
+}
+
+function replace(s){
+
+  var output = s.replace(/([aeiouAEIOU])/g, "!");
+ 
+  return (output);
+}

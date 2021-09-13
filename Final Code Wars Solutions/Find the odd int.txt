@@ -1,0 +1,31 @@
+
+  function findOdd(array) {
+    
+    let count = 0;
+    let element = 0;
+
+    //First for loop runs once before second nested for loop, we are just getting the first element value and then we search through the entire array again
+    //using the 2nd for loop counting up the occurances, then we check to see if the tempCount value is NOT divisable by 2, and if this is true we make the value
+    //of element equal the tempInt and return it. So for each element in the array, we compare it with all the elments in the array and count up the occurances,
+    //and if it is odd we return that element
+    for(let i = 0; i < array.length; i++) {
+        
+    let tempInt = array[i];
+    let tempCount = 0;
+        
+    for(let j = 0; j <array.length; j++) {
+            
+      if(array[j]===tempInt) {
+         tempCount++;
+            
+           }
+       }
+     
+    if(tempCount % 2 !== 0) {
+            
+    element = tempInt;
+        }
+    }
+    
+    return element;
+    }

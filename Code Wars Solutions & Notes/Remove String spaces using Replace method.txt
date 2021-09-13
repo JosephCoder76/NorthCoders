@@ -1,0 +1,19 @@
+function noSpace(x){
+//console.log()
+  
+  //remove all the spaces from the sring passed to the function as a parameter
+  // define the strip variable to equal the result if using the replace method on the x string 
+  // \s is the regex for "whitespace", and g is the "global" flag, meaning match ALL \s (whitespaces), we then provide the '' to
+  //denote no space as the character to replace each of the whitespaces with
+  let strip=x.replace(/\s/g, ''); 
+  //console.log(strip)
+  return strip;
+}
+
+
+function noSpace(x){
+
+  let strip=x.replace(/\s/g, ''); 
+  
+  return strip;
+}

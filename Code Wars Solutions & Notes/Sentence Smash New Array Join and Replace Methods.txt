@@ -1,0 +1,26 @@
+// Smash Words
+function smash (words) {
+  //define a new array for the combined strings
+ let newArray=[];
+  //join the elements first and add them to the newArray
+  
+  newArray=words.join();
+  
+  //now we need to strip out the commas and replace them with a space. so we setup a new variable strip which equals
+  //thenewArray after the .replace function has been invoked which removes the , which is assigned between the/,/ the g I 
+  //believe refers to global as in all the occurances of the , not just one so its like a replaceAll, then we instruct the
+  //replace function to replace the , with the space string
+  
+  let strip=newArray.replace(/,/g, ' ');
+ 
+  return strip;
+  }
+
+
+function smash (words) {
+  let newArray=[];
+  newArray=words.join();
+  let strip=newArray.replace(/,/g, ' ');
+ 
+  return strip;
+  }

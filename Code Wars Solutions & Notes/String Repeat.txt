@@ -1,0 +1,23 @@
+function repeatStr (n, s) {
+  //Write code in this function that repeats the string n times
+  //use the console.log() first to see what the parameters passed to the repeatStr look like
+  //console.log(n,s)
+  //define a variable which will become the output
+  let output = "";
+  //Create a For loop that iterates until the value of n is met and then exits
+  for (let i=1; i<=n; ++i){
+  //So we need to used the .repeat method in Javascript to multiply the string by the number value
+    output = s.repeat(n);
+    //counter = counter +=1;  
+    //console.log(counter)
+  }
+  
+  return output;
+}
+
+function repeatStr (n, s) {
+  let output ="";
+  output = s.repeat(n);
+  
+  return output;
+}

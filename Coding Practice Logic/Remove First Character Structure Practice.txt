@@ -1,0 +1,11 @@
+function removeChar(str){
+ /* 1.Remove the fist and last cahacters of the string/array
+    2. Use the slice function and assign the result to a new array
+    3. Return the new string
+ */
+
+let output = str.slice(1,[-1]);
+//console.log(output);
+  return output;
+
+}

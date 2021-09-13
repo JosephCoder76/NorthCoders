@@ -1,0 +1,30 @@
+Complete the square sum function so that it squares each number passed into it and then sums the results together.
+
+For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
+
+function squareSum(numbers){
+//so first of all we need to multiply the numbers passesd to the function by themselves
+//then we need to add the result of each of the multiplications together for example [1,2]) = 5)
+//use a For loop to iterate through the array one element at a time so we can do the multiplication of the element on its square
+//then pass the result to a total variable 
+//initiate a total variable  
+  let total = 0;
+  //for loop iterates until i is not less than the array length
+  for (i=0; i<numbers.length; i++){
+    //total = itself + the numbers element for the current itteration, * by itself, this becomes a running total until
+    //the for loop exits and then the return statement returns the total variable value
+    total = total + numbers[i]*numbers[i]
+     
+    
+  }
+    return total;
+}
+
+function squareSum(numbers){
+  let total = 0;
+  for (i=0; i<numbers.length; i++){
+  total = total + numbers[i]*numbers[i]
+        
+  }
+    return total;
+}

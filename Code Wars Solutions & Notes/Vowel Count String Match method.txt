@@ -1,0 +1,36 @@
+function getCount(str) {
+//decalre a counter variable  
+let counter = 0;
+  
+//the below uses the match method for the str string and search globally in the string for all occurances of each of the seperate vowels, and then we
+//sum the values of the seperate variables anbd return the final value of counter
+    var a = (str.match(/a/g) || []).length;
+    var e = (str.match(/e/g) || []).length;
+    var i = (str.match(/i/g) || []).length;
+    var o = (str.match(/o/g) || []).length;
+    var u = (str.match(/u/g) || []).length;
+    counter = a+e+i+o+u
+  
+  return counter
+}
+
+
+
+
+
+function getCount(str) {
+  let counter = 0;
+  
+    var a = (str.match(/a/g) || []).length;
+    var e = (str.match(/e/g) || []).length;
+    var i = (str.match(/i/g) || []).length;
+    var o = (str.match(/o/g) || []).length;
+    var u = (str.match(/u/g) || []).length;
+    counter = a+e+i+o+u
+  
+  return counter
+}
+
+
+
+
