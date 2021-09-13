@@ -109,7 +109,7 @@ Git Init and Add
 13. git status lists all the files in staging ready for commit
 14. git rm <file-name>, removes a defined file from the staging area
 15. git rm - r . removes all the files and directories from the current path
-16.
+16. After the commit locally we need to push to the gitHub repository 
 
 
 
