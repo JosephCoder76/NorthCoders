@@ -110,6 +110,12 @@ Git Init and Add
 14. git rm <file-name>, removes a defined file from the staging area
 15. git rm - r . removes all the files and directories from the current path
 16. After the commit locally we need to push to the gitHub repository 
+17. Push to gitHub
+18. Go to gitHub and add a repository
+19. git remote add origin https://github.com/JosephCoder76/NorthCoders.git we can call the remote another name20
+20. git push origin master
+21. Now the repository is on gitHub if we make changes on the gitHub side of the workflow we can pull these changes back to our local laptop git using git pull origin main
+22. git pull origin main
 
 
 
